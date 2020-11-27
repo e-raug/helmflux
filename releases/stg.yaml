@@ -1,18 +1,22 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: helmbasic-staging
+  name: helmbasic-develop
   namespace: staging
   annotations:
     fluxcd.io/automated: "true"
 spec:
-  releaseName: helmbasic-staging
+  releaseName: helmbasic-stagging
   chart:
-    git: git@github.com:mifonpe/helmflux
+    git: git@github.com:e-raug/helmflux
     path: helmbasics
-    ref: staging
+    ref: develop
   values:
-    environment: staging
-    replicaCount: 2
+    environment: development
+    replicaCount: 1
     ingress:
-      host: mywebserver.staging.kubesandclouds.com
+      host: mywebserver.dev.kubesandclouds.com
+    image:
+      repository: nginx
+      tag: latest
+
