@@ -20,4 +20,4 @@ spec:
       host: mywebserver.dev.kubesandclouds.com
     image:
       repository: 123432123432/apache
-      tag: v0.0.1
+      tag: v0.0.2
