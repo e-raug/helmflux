@@ -21,6 +21,3 @@ spec:
     image:
       repository: 123432123432/nginx
       tag: v0.0.3
-    image_abc:
-      repository: 123432123432/apache
-      tag: v0.0.2
