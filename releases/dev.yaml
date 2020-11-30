@@ -19,5 +19,5 @@ spec:
     ingress:
       host: mywebserver.dev.kubesandclouds.com
     image:
-      repository: 123432123432/apache
-      tag: v0.0.2
+      repository: 123432123432/nginx
+      tag: v0.0.3
